@@ -1,0 +1,299 @@
+/**********************************************
+ * C:\Users\Admin\Desktop\Page Builder\frontend\src\styles\Workspace.css
+ **********************************************/
+.workspace {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ddd;
+  padding: 10px;
+}
+
+.workspace-title {
+  margin: 0 0 10px;
+  font-size: 1.3em;
+  color: #444;
+}
+
+.workspace-canvas {
+  flex: 1;
+  position: relative;
+  border: 2px dashed #bbb;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+  min-height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.workspace-element {
+  margin: 10px 0;
+}
+
+.element-box {
+  background: #e6f7ff;
+  border: 2px solid #91d5ff;
+  border-radius: 4px;
+  position: relative;
+  padding: 10px;
+  transition: border-color 0.3s;
+  min-height: 40px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 2px 6px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+.delete-button:hover {
+  opacity: 0.8;
+}
+
+.drop-zone {
+  height: 10px;
+  margin: 2px 0;
+  background: #f0f0f0;
+  border: 1px dashed transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.drop-zone:hover {
+  background-color: #d0f0ff;
+  border-color: #58cfff;
+}
+
+/* Default “real webpage” styling for HTML tags */
+
+.workspace-canvas p {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #333;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+.workspace-canvas h1,
+.workspace-canvas h2,
+.workspace-canvas h3,
+.workspace-canvas h4,
+.workspace-canvas h5,
+.workspace-canvas h6 {
+  margin: 12px 0 8px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+.workspace-canvas h1 { font-size: 1.8em; }
+.workspace-canvas h2 { font-size: 1.6em; }
+.workspace-canvas h3 { font-size: 1.4em; }
+.workspace-canvas h4 { font-size: 1.2em; }
+.workspace-canvas h5 { font-size: 1em; }
+.workspace-canvas h6 { font-size: 0.95em; }
+
+/* Headings can be inside .element-box, so add spacing. */
+.element-box h1, .element-box h2, .element-box h3,
+.element-box h4, .element-box h5, .element-box h6 {
+  margin-top: 0;
+}
+
+/* text-level elements: a, strong, etc. */
+.workspace-canvas a {
+  color: #1890ff;
+  text-decoration: none;
+}
+.workspace-canvas a:hover {
+  text-decoration: underline;
+}
+.workspace-canvas strong {
+  font-weight: bold;
+}
+.workspace-canvas em {
+  font-style: italic;
+}
+
+/* Lists */
+.workspace-canvas ul {
+  margin: 8px 0 8px 20px;
+  padding: 0;
+  list-style: disc;
+}
+.workspace-canvas ol {
+  margin: 8px 0 8px 20px;
+  padding: 0;
+  list-style: decimal;
+}
+.workspace-canvas li {
+  margin: 4px 0;
+}
+
+/* Images default */
+.workspace-canvas img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Tables */
+.workspace-canvas table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+.workspace-canvas th,
+.workspace-canvas td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+/* Forms */
+.workspace-canvas form {
+  margin: 12px 0;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+.workspace-canvas fieldset {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+.workspace-canvas legend {
+  padding: 0 5px;
+  font-weight: bold;
+}
+.workspace-canvas label {
+  display: inline-block;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-weight: 600;
+  color: #444;
+  font-family: Arial, sans-serif;
+}
+.workspace-canvas input[type="text"],
+.workspace-canvas input[type="email"],
+.workspace-canvas input[type="password"],
+.workspace-canvas input[type="url"],
+.workspace-canvas input[type="tel"],
+.workspace-canvas select,
+.workspace-canvas textarea {
+  display: block;
+  margin-bottom: 8px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+.workspace-canvas input[type="checkbox"],
+.workspace-canvas input[type="radio"] {
+  margin-right: 4px;
+}
+.workspace-canvas button,
+.workspace-canvas input[type="submit"],
+.workspace-canvas input[type="reset"] {
+  padding: 6px 12px;
+  background-color: #1890ff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin-top: 6px;
+}
+.workspace-canvas button:hover,
+.workspace-canvas input[type="submit"]:hover,
+.workspace-canvas input[type="reset"]:hover {
+  background-color: #40a9ff;
+}
+
+/* Video/Audio, etc. */
+.workspace-canvas video,
+.workspace-canvas audio {
+  margin: 10px 0;
+  max-width: 100%;
+  outline: 1px solid #ccc;
+  outline-offset: -1px;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+/* Iframe */
+.workspace-canvas iframe {
+  margin: 10px 0;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+/* Dialog, details, summary */
+.workspace-canvas dialog {
+  border: 1px solid #ccc;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.workspace-canvas details {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fafafa;
+  padding: 6px;
+}
+.workspace-canvas summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Sectioning elements default styling (header, footer, main, section, article, nav, aside, address) */
+.workspace-canvas header,
+.workspace-canvas footer,
+.workspace-canvas main,
+.workspace-canvas section,
+.workspace-canvas article,
+.workspace-canvas nav,
+.workspace-canvas aside,
+.workspace-canvas address {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.workspace-canvas address {
+  font-style: normal;
+  background-color: #f0f0f0;
+}
+
+/* Force a bit of margin top 0 so it doesn't push inside .element-box too far */
+.element-box header,
+.element-box footer,
+.element-box main,
+.element-box section,
+.element-box article,
+.element-box nav,
+.element-box aside,
+.element-box address {
+  margin-top: 0;
+}

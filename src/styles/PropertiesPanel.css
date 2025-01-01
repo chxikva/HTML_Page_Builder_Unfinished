@@ -1,0 +1,37 @@
+/****************************************************
+ * C:\Users\Admin\Desktop\Page Builder\frontend\src\styles\PropertiesPanel.css
+ ****************************************************/
+.properties-panel {
+  width: 250px;
+  padding: 10px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.properties-panel h2 {
+  margin: 0 0 10px;
+  font-size: 1.4em;
+  color: #444;
+}
+
+.properties-panel p {
+  margin: 0 0 8px;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.properties-panel label {
+  display: block;
+  margin: 6px 0 2px;
+  font-weight: 600;
+  color: #333;
+}
+
+.properties-panel input,
+.properties-panel select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
